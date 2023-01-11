@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"><![CDATA[
+    tools:context=".ChoiceActivity">
+    ]]>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="138dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="260dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/ch_scan"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="163dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="124dp"
+        android:text="Capture"
+        app:icon="@android:drawable/ic_menu_camera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ch_insert"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="163dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="64dp"
+        android:text="Insert"
+        app:icon="@android:drawable/ic_menu_edit"
+        app:iconTint="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/ch_scan"
+        app:layout_constraintTop_toBottomOf="@+id/ch_scan" />
+
+    <Button
+        android:id="@+id/ch_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.667" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
